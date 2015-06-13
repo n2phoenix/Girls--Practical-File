@@ -1,7 +1,17 @@
-import java.io.*;
+import java.util.*;
 class Triangle implements geoShape
 {
     double b, h;
+    
+    public void accept()
+    {
+        Scanner in = new Scanner (System.in);
+        System.out.println ("Enter base: ");
+        b = Double.parseDouble (in.nextLine());
+        System.out.println ("Enter height: ");
+        h = Double.parseDouble (in.nextLine());
+    }
+    
     public double calcarea()
     {
         return 0.5 * b * h;
